@@ -22,5 +22,6 @@ public class Aplic {
         System.out.println("\nMedida da altura: " + objRet.getAltura());
         System.out.println("Medida de perimetro: " + objRet.calcPerimetro());
         System.out.println("Medida da área: " + objRet.calcArear());
+        System.out.println("Mediade de diagonal: " + objRet.calcDiagonal());
     }   
 }
