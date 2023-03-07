@@ -8,11 +8,11 @@ public class Circulo {
     private double raio;
     private final double pi = 3.1416;
 
-    public void setRaio(double r) {
-        raio = r;
-    }
     public double getRaio() {
-        return(raio);
+        return raio;
+    }
+    public void setRaio(double raio) {
+        this.raio = raio;
     }
     
     public double calcArea() {
