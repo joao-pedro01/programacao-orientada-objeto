@@ -14,16 +14,16 @@ public class Aplic {
         Scanner entrada = new Scanner(System.in);
         Aluno objAluno = new Aluno();
         
-        System.out.println("Digite o seu RA: ");
+        System.out.print("Digite o seu RA: ");
         ra = entrada.nextInt();
         
-        System.out.println("Digite a Nota da primeira prova: ");
+        System.out.print("Digite a Nota da primeira prova: ");
         ntProva1 = entrada.nextDouble();
-        System.out.println("Digite a Nota da segunda prova: ");
+        System.out.print("Digite a Nota da segunda prova: ");
         ntProva2 = entrada.nextDouble();
-        System.out.println("Digite a Nota do primeiro trabalho: ");
+        System.out.print("Digite a Nota do primeiro trabalho: ");
         ntTrab1 = entrada.nextDouble();
-        System.out.println("Digite a Nota do segundo trabalho: ");
+        System.out.print("Digite a Nota do segundo trabalho: ");
         ntTrab2 = entrada.nextDouble();
         
         objAluno.setRA(ra);
@@ -55,6 +55,11 @@ public class Aplic {
 
                 case 3:
                     System.out.println("\n\nMédia final: \n\n" + objAluno.calcMediaFinal());
+                    if(objAluno.situacaoAluno() == true) {
+                        System.out.println("Aluno está aprovado");
+                    }else {
+                        System.out.println("Aluno está reprovado");
+                    }
                 break;
 
                 //default:
