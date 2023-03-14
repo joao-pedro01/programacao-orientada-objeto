@@ -36,21 +36,22 @@ public class Aplic {
                     System.out.print("Digite o valor que deseja depositar: ");
                     saldo = entrada.nextDouble();
                     objConta.depositar(saldo);
+                    System.out.println("\n\nDeposito de R$" + saldo + " feito com sucesso!\n\n");
                 break;
 
                 case 2:
                     System.out.print("Digite o valor que deseja sacar: ");
+                    saldo = entrada.nextDouble();
                     if(saldo > objConta.getSaldo()) {
-                        System.out.println("Saldo insuficiente");
+                        System.out.println("\n\nSaldo insuficiente\n\n");
                         break;
                     }
-                    saldo = entrada.nextDouble();
                     objConta.sacar(saldo);
-                    
+                    System.out.println("\n\nSaque de R$" + saldo + " feito com sucesso!\n\n");
                 break;
 
                 case 3:
-                    System.out.println(objConta.getSaldo());
+                    System.out.println("\n\nSaldo da conta é de:" + objConta.getSaldo() + "\n\n");
                 break;
             
             }
